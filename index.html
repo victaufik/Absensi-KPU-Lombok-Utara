@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Absensi KPU KLU</title>
+</head>
+<body>
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbzj7xXYFCpP7_dYTRIfaEkVwWjTYJh7NXei1v-38L3vXt207q52KP7gMn49ShpLHP8a/exec"
+    width="100%"
+    height="100%"
+    allowfullscreen="true"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+
+  <script>
+    window.onload = function() {
+      document.querySelector('iframe')
+        .requestFullscreen()
+        .catch((err) => {
+          console.error('Error attempting to enable full-screen mode:', err.message);
+        });
+    };
+  </script>
+</body>
+</html>
